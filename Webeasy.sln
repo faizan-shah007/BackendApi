@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32519.379
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Webeasy", "Webeasy\Webeasy.csproj", "{13D88766-9336-4F0E-B3A5-F81EC79B81FB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{13D88766-9336-4F0E-B3A5-F81EC79B81FB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{13D88766-9336-4F0E-B3A5-F81EC79B81FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{13D88766-9336-4F0E-B3A5-F81EC79B81FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{13D88766-9336-4F0E-B3A5-F81EC79B81FB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A1A8D27C-D11F-45F5-9425-A1C7490F20C4}
+	EndGlobalSection
+EndGlobal
