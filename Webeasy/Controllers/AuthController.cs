@@ -20,7 +20,6 @@ namespace Webeasy.Controllers
         public async Task<User> SignInAsync(string email, string password)
         {
             var user = dbContext.Users.FirstOrDefault(x=> x.Email == email && x.Password == password);
-
             if(user == null)
             {
                 return new User();
