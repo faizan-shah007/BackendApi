@@ -25,18 +25,17 @@ namespace Webeasy.Controllers
         [HttpPost]
         public async Task<IActionResult> PostAsync([FromBody]User user)
         {
-            /*WebeasyContext we = new WebeasyContext();
-            var fname = user.FirstName;
-            var lname = user.LastName;
-            var Mobile = user.Mobile;
-            var Cnic = user.Cnic;
-            var Email = user.Email;
-            var Password = user.Password;
-            */
-            await dbContext.Users.AddAsync(user);
-            await dbContext.SaveChangesAsync();
-            return Ok(user);
-
+            var userRecord=dbContext.Users.FirstOrDefaultAsync(dbdata=> dbdata.Email == user.Email);
+            if (userRecord == null)
+            {
+                await dbContext.Users.AddAsync(user);
+                await dbContext.SaveChangesAsync();
+                return Ok(user);
+            }
+            else
+            {
+                return BadRequest("Email Already Exist");
+            }
         }
 
         [HttpGet]
